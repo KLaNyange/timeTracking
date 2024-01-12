@@ -10,6 +10,12 @@ function Card(props) {
         period = 'Last month'
     }
 
+    function hover(e){
+        // e.target.style.cursor = 'pointer'
+        // e.target.style.filter = 'invert(8%) sepia(100%) saturate(6481%) hue-rotate(246deg) brightness(102%) contrast(143%)'
+        // e.target.style.filter = 'brightness(0) invert(1)'
+    }
+
     return (
         <div className={`fullCard ${props.title.toLowerCase()}`}>
             <div className="card">
