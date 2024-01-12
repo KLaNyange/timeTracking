@@ -1,0 +1,49 @@
+p{
+    cursor: pointer;
+}
+
+.cardProfile{
+    background-color:  hsl(235, 46%, 20%);
+    color: lightblue;
+    width: 20%;
+    height: 550px;
+    padding-bottom: 90px;
+}
+.cardProfile p{
+    padding-left: 30px;
+    
+}
+.profile{
+    background-color:  hsl(246, 80%, 60%);
+    height: 80%;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.profile img{
+    height: 100px;
+    border: 5px solid white ;
+    border-radius: 50%;
+}
+
+.profile h1{
+    margin: 0;
+}
+.cardProfile div + p:nth-of-type(1){
+    margin-top:30px ;
+}
+.pProfile{
+    font-size: 20px;
+}
+.cardProfile, .profile{
+    border-radius: 20px;
+}
+
+.active{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.info{
+    width: 50%;
+    font-size: 30px;
+}

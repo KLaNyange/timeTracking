@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import SideBar from './components/SideBar/SideBar';
+import Cards from './components/Cards/Cards'
+import data from './data.json'
+import { useState } from 'react';
 
 function App() {
+
+  const [timing, setTiming] = useState('daily')
+
+  function changeTiming(e){
+    setTiming(e.target.innerText.toLowerCase())
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SideBar changeTiming = {changeTiming} timing={timing}/>
+      <Cards data={data} timing={timing} />
     </div>
   );
 }

@@ -1,0 +1,76 @@
+.fullCard{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    position: relative;
+    color: aliceblue;
+}
+.fullCard h1{
+    font-weight: 400px;
+    font-size: 45px;
+}
+.fullCard.work{
+    background-image: url('../../assets/img/icon-work.svg');
+    background-repeat: no-repeat;
+    background-position: 90% -2%;
+    background-color: hsl(15, 100%, 70%);
+}
+.fullCard.play{
+    background-image: url('../../assets/img/icon-play.svg');
+    background-repeat: no-repeat;
+    background-position: 90% -2%;
+    background-color: hsl(195, 74%, 62%);
+}
+.fullCard.study{
+    background-image: url('../../assets/img/icon-study.svg');
+    background-repeat: no-repeat;
+    background-position: 90% -2%;
+    background-color: hsl(348, 100%, 68%);
+}
+.fullCard.exercise{
+    background-image: url('../../assets/img/icon-exercise.svg');
+    background-repeat: no-repeat;
+    background-position: 90% 1%;
+    background-color: hsl(145, 58%, 55%);
+}
+.fullCard.social{
+    background-image: url('../../assets/img/icon-social.svg');
+    background-repeat: no-repeat;
+    background-position: 90% -2%;
+    background-color: hsl(264, 64%, 52%);
+}
+.fullCard.self.care{
+    background-image: url('../../assets/img/icon-self-care.svg');
+    background-repeat: no-repeat;
+    background-position: 90% -2%;
+    background-color: hsl(43, 84%, 65%);
+}
+
+.card{
+    background-color:  hsl(235, 46%, 20%);
+    height: 85%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card > div{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.fullCard, .fullCard *{
+    border-radius: 20px;
+}
+.titleAndDots{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .titleAndDots span{
+    font-size: 50px;
+} */
+
